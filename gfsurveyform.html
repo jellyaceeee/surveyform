@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Girlfriend Survey Form</h1>
+    <p id="description">This is a girlfriend survey form</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Name: <input id="name" type="text" placeholder="Adrian" required /></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" type="email" placeholder="...@gmail.com"required /></label>
+        <label for="age" id="number-label">Enter Your Age: <input id="number" type="number" min="18" max="22" placeholder="18 to 22" required/></label> 
+      </fieldset> 
+      <fieldset>
+        <label>What's you're degree program?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">BS Biology</option>
+            <option value="2">Engineering</option>
+            <option value="3">Liberal Arts</option>
+            <option value="4">Humanities</option>
+            <option value="5">Science</option>
+            <option value="6">Other</option>
+          </select>
+        </label>
+        <label>Do you like me?</label>
+        <label for="personal-account"><input id="yes" type="radio" name="account-type" value="yes" class="inline" checked /> Yes</label>
+        <label for="business-account"><input id="no" type="radio" name="account-type" value="no" class="inline" /> No(mag-eerror dito)</label>
+      </fieldset>
+      <fieldset>
+        <legend>What's your type? </legend>
+        <input id="chinito" type="checkbox" name="personality" value="chinito" class="inline" checked> <label for="loving" class="labelline">Chinito</label>
+            <input id="mestizo" type="checkbox" name="personality" value="mestizo" class="inline"> <label for="lazy" class="labelline" >Mestizo</label>
+            <input id="6ft" type="checkbox" name="personality" value="6ft" class="inline"> <label for="energetic" class="labelline">6ft</label>
+            <input id="short-king" type="checkbox" name="personality" value="short-king" class="inline"> <label for="energetic" class="labelline">Short-king</label>
+            <input id="adrian" type="checkbox" name="personality" value="adrian"class="inline"> <label for="energetic" class="labelline" >Adrian</label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload a  picture of your pet: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="bio">Why do you like me?:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like Adrian because..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit"type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
